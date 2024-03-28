@@ -1,0 +1,185 @@
+#root {
+  width: 100%;
+  height: 100%; 
+  overflow: scroll;
+}
+
+img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex: none;
+}
+
+.header{
+  mix-blend-mode: multiply;
+  border-radius: 25px;
+  display: flex;
+  overflow:hidden;
+  justify-content: center;
+  text-align: center;
+  background-color: #271F30;
+  color: #BE95C4;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  min-height: 150px;
+}
+
+.resume{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  width: 100dvw;
+}
+.vertical{
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.horizontal{
+  display: flex;
+  column-gap: 15px;
+  max-width: 1600px;
+  max-height: 1600px;
+}
+
+.about {
+  mix-blend-mode: multiply;
+  font-size: 2.75rem;
+  font-family: 'ThunderThin';
+  background-color: #3D2541;
+  color: antiquewhite;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.main{
+  background-color: #9E62A7;
+  color: antiquewhite;
+}
+
+.main:hover{
+  background-color: antiquewhite;
+  color: #9E62A7;
+}
+
+.secondary{
+  background-color: #6F4276;
+  color: antiquewhite;
+}
+
+.secondary:hover{
+  background-color: antiquewhite;
+  color: #6F4276;
+}
+
+.BentoBox{
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.title{
+  font-size: 9.25rem;
+  font-family: 'ThunderBlack';
+  padding: 10px;
+  margin: 0px;
+  line-height: 1;
+  color: #BE95C4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.art{
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  mix-blend-mode: multiply;
+}
+
+.logo {
+  height: 3em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Webfont: Thunder-ThinLC */@font-face {
+  font-family: 'ThunderThin';
+  src: url('../fonts/Thunder-ThinLC.woff2') format('woff2'), /* Modern Browsers */
+       url('../fonts/Thunder-ThinLC.otf') format('opentype'); /* Safari, Android, iOS */
+           font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Thunder-BlackLC */@font-face {
+  font-family: 'ThunderBlack';
+  src: url('../fonts/Thunder-BlackLC.woff2') format('woff2'), /* Modern Browsers */
+       url('../fonts/Thunder-BlackLC.otf') format('opentype'); /* Safari, Android, iOS */
+           font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Thunder-ExtraBoldLC */@font-face {
+  font-family: 'ThunderExtBd';
+  src: url('../fonts/Thunder-ExtraBoldLC.woff2') format('woff2'), /* Modern Browsers */
+       url('../fonts/Thunder-ExtraBoldLC.otf') format('opentype'); /* Safari, Android, iOS */
+           font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Thunder-ExtraBoldLC */@font-face {
+  font-family: 'Thunder';
+  src: url('../fonts/Thunder-LC.woff2') format('woff2'), /* Modern Browsers */
+       url('../fonts/Thunder-LC.otf') format('opentype'); /* Safari, Android, iOS */
+           font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+/* Webfont: Thunder-ExtraBoldLC */@font-face {
+  font-family: 'ThunderBoldItalic';
+  src: url('../fonts/Thunder-BoldLCItalic.woff2') format('woff2'), /* Modern Browsers */
+       url('../fonts/Thunder-BoldLCItalic.otf') format('opentype'); /* Safari, Android, iOS */
+           font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+

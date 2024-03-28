@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+  }
+
+form{
+    text-align: center;
+    width: 300px;
+}
+
+label{
+    color: #6F4276;
+    font-size: 3rem;
+    font-family: 'ThunderThin';
+    margin: 0;
+    line-height: 1;
+    padding-top: 15px;
+}
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    mix-blend-mode: multiply;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #6F4276;
+    color: antiquewhite;
+  }
+
+  ::placeholder {
+    font-family: 'Thunder';
+    color: antiquewhite;
+    opacity: 1; /* Firefox */
+    font-size: 1.2rem;
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    font-family: 'Thunder';
+    color: antiquewhite;
+    font-size: 1.2rem;
+  }
+  
+  input[type=submit] {
+    font-family: 'Thunder';
+    font-size: 1.2rem;
+    background-color: #6F4276;
+    color: antiquewhite;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+    mix-blend-mode: multiply;
+  }
+
+  input[type=submit]:hover {
+    background-color: antiquewhite;
+    color: #6F4276;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 15px;
+    padding: 10px;
+    height: 100dvh;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .ccolumn {
+    float: left;
+    margin-top: 6px;
+    padding: 20px;
+  }
+
+  .container img{
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    border-radius: 15px;
+    width: 500px;
+  }
+
+  .crow{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  /* Clear floats after the columns */
+  .crow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .ccolumn, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  .icon{
+    display: flex;
+    background-color: #3D2541;
+    mix-blend-mode: multiply;
+    border-radius: 25px;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+  }

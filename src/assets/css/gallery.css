@@ -1,0 +1,108 @@
+.gallery{
+  padding: 10px;
+}
+
+.gallery-header{
+  mix-blend-mode: multiply;
+  border-radius: 25px;
+  display: flex;
+  overflow:hidden;
+  justify-content: center;
+  text-align: center;
+  background-color: #271F30;
+  color: #BE95C4;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  height: 10%;
+}
+
+.gallery-header:hover{
+  background-color: #BE95C4 ;
+  color: #271F30 ;
+}
+
+.gallery-title{
+  font-size: 5rem;
+  padding: 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  .row img {
+    position: relative; /* Override global absolute positioning */
+    top: auto;
+    left: auto;
+    transform: none;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    position: relative;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+    margin-top: 8px;
+    mix-blend-mode: multiply;
+    
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: border-radius;
+    transition-property: border-radius;
+  }
+  .column img:hover, column img:focus, column img:active{
+    border-radius: 25px;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 48%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .overlay{
+    position: absolute;
+    height: 100dvh;
+    width: 100dvw;
+    z-index: 10;
+    background-color: rgba(190, 149, 196,.75);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    align-items: end;
+  }
+
+  .overlay img{
+    height: 80%;
+    width: auto;   
+  }
+
+  .exit{
+    mix-blend-mode: multiply;
+    color: #3D2541;
+    font-size: large;
+    padding: 10px;
+    border-radius: 25px;
+  }
