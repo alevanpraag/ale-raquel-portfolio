@@ -15,7 +15,7 @@ import './assets/css/index.css'
 export default function App(props) {
   return (
        <div>
-        <Router>
+        <Router basename="/ale-raquel-portfolio/">
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/art" element={<ArtPage/>}/>
