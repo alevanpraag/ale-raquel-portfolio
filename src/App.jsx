@@ -56,7 +56,7 @@ function Home() {
             <section className='main' style={{height: '33%'}} onClick={()=> window.open("https://github.com/alevanpraag", "_blank")}>
               <h2>TECH</h2>
             </section>
-            <div className='art' style={{ height:'67%', backgroundColor:'#001219'}}>
+            <div className='art clickable' style={{ height:'67%', backgroundColor:'#001219'}} onClick={()=> window.open("https://youtube-rewind-410800.uc.r.appspot.com/", "_blank")}>
               <img src={rewind} alt="Girl in a jacket" width="90%" style={{top:'47.5%'}}></img>
             </div>
           </div>
