@@ -1,8 +1,8 @@
 {
-  "name": "alevanpraag.github.io",
+  "name": "ale-raquel-portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://alevanpraag.github.io/react-gh-pages",
+  "homepage": "https://alevanpraag.github.io/ale-raquel-portfolio",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
