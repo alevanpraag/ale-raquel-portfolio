@@ -6,7 +6,7 @@ You can view the live site at [https://alevanpraag.github.io/ale-raquel-portfoli
 
 ## Overview
 
-Describe your project briefly, including the main features, technologies used, and the purpose of the project.
+Went with the bento box ui style for the homepage and in additon a gallery for my digital art. 
 
 ## Technologies
 
