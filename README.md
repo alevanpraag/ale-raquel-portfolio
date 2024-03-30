@@ -1,4 +1,3 @@
-```markdown
 # Ale Raquel Portfolio
 
 This is the source code for the Ale Raquel Portfolio website, a project showcasing my work and skills. Built with Vite and React, hosted on GitHub Pages.
@@ -67,5 +66,3 @@ Provide instructions on how others can contribute to your project. Include guide
 ## License
 
 Specify the license under which the project is released, if applicable.
-
-```
