@@ -48,7 +48,7 @@ export default function ArtPage(props){
       return (
         <div className='overlay' onClick={()=>handleOverlayClick()}>
           <div className="exit">
-            <p style={{fontSize: '2rem', fontFamily: 'ThunderBoldItalic'}}>CLICK ANYWHERE TO EXIT</p>
+            <p style={{fontSize: '2rem', fontFamily: 'ThunderBlack'}}>CLICK ANYWHERE TO EXIT</p>
           </div>
           <img src={img} onClick={()=>handleImgClick(art1)}/>
         </div>

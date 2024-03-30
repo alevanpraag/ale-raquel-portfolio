@@ -38,8 +38,8 @@ function Home() {
         <div className='horizontal' style={{ height:'45%'}}>
           <div className='vertical' style={{width: '60%'}}>
             <div className='about' style={{height: '66%'}}>
-              <p> <span style={{fontFamily:'ThunderExtBd'}}> ARTIST </span> and full stack <span style={{fontFamily:'ThunderExtBd'}}>ENGINEER</span></p>
-              <p> <span style={{fontFamily:'ThunderBoldItalic'}}>Carnegie Mellon University </span> grad</p>
+              <p> Artist & Full Stack Engineer</p>
+              <p> Carnegie Mellon University Grad</p>
               <p style={{fontSize:'2rem'}}>B.S. in <span style={{fontFamily:'Thunder'}}>Discrete Math</span></p>
               <p style={{fontSize:'2rem'}}>Minors in <span style={{fontFamily:'Thunder'}}>CS</span> and <span style={{fontFamily:'Thunder'}}> Film+Media</span></p>
             </div>

@@ -20,7 +20,7 @@ body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  font-family: 'ThunderThin';
+  font-family: 'Thunder';
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -41,7 +41,7 @@ header{
 }
 
 section {
-  font-family: 'ThunderThin';
+  font-family: 'Thunder';
   border-radius: 25px;
   display: flex;
   overflow: hidden;
@@ -78,7 +78,7 @@ p{
 
 h2 {
   font-size: 6rem;
-  font-family: 'ThunderThin';
+  font-family: 'Thunder';
   margin: 0;
   line-height: 1;
   padding-top: 15px;
