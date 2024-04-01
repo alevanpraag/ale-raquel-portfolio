@@ -81,7 +81,7 @@ label{
     top: auto;
     left: auto;
     transform: none;
-    border-radius: 15px;
+    border-radius: 25px;
     width: 500px;
   }
 
@@ -114,4 +114,12 @@ label{
     width: 100px;
     align-items: center;
     justify-content: center;
+  }
+
+  .contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
   }

@@ -1,5 +1,5 @@
 import './assets/css/Contact.css'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import profilePic from './assets/img/artwork/coke.png'
 
 import email from './assets/svg/email2.svg'
@@ -19,21 +19,29 @@ export default function Contact(props){
             <img src={profilePic}/>
             </div>
             <div className="ccolumn" style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly'}}>
-                <div className='icon'>
-                    <img src={email} width="80px" height="80px"/>
-                </div>
-                <div className='icon'>
-                    <img src={linkedin} width="65px" height="65px"/>
-                </div>
-                <div className='icon'>
+                <Link className='contact' to="mailto:alevanpraag@gmail.com">
+                    <div className='icon'>
+                        <img src={email} width="80px" height="80px"/>
+                    </div>
+                    <h2 style={{color: '#3D2541'}}>EMAIL</h2>
+                </Link>
+                <Link className='contact' to="https://www.linkedin.com/in/alexandra-van-praag/">
+                    <div className='icon'>
+                        <img src={linkedin} width="65px" height="65px"/>
+                    </div>
+                    <h2 style={{color: '#3D2541'}}>LINKEDIN</h2>
+                </Link>
+                <Link className='contact' to="https://github.com/alevanpraag">
+                    <div className='icon'>
                     <img src={github} width="75px" height="75px"/>
-                </div>
+                    </div>
+                    <h2 style={{color: '#3D2541'}}>GITHUB</h2>
+                </Link>
             </div>
-            <div className="ccolumn" style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly'}}>
+{/*             <div className="ccolumn" style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly'}}>
                 <h2 style={{color: '#3D2541'}}>EMAIL</h2>
-                <h2 style={{color: '#3D2541'}}>LINKEDIN</h2>
                 <h2 style={{color: '#3D2541'}}>GITHUB</h2>
-            </div>
+            </div> */}
         </div>
         </div>
   )

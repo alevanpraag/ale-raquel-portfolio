@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import actionPic from './assets/img/catwalk.png'
 import profilePic from './assets/img/Alexandra.png'
 import art1 from './assets/img/artwork/mandala3.png'
@@ -38,10 +38,10 @@ function Home() {
         <div className='horizontal' style={{ height:'45%'}}>
           <div className='vertical' style={{width: '60%'}}>
             <div className='about' style={{height: '66%'}}>
-              <p> Artist & Full Stack Engineer</p>
-              <p> Carnegie Mellon University Grad</p>
-              <p style={{fontSize:'2rem'}}>B.S. in <span style={{fontFamily:'Thunder'}}>Discrete Math</span></p>
-              <p style={{fontSize:'2rem'}}>Minors in <span style={{fontFamily:'Thunder'}}>CS</span> and <span style={{fontFamily:'Thunder'}}> Film+Media</span></p>
+              <p> Full Stack Engineer & Artist</p>
+              <p> Carnegie Mellon University Gradute</p>
+              <p style={{fontSize:'1.8rem'}}>B.S. in Discrete Mathematics and Logic</p>
+              <p style={{fontSize:'1.8rem'}}>Minors in Computer Science and Film+Media</p>
             </div>
             <div className='horizontal' style={{height: '33%'}}>
               <section className='secondary' style={{width: '66%'}} onClick={()=>navigate('/contact')}>
@@ -53,12 +53,16 @@ function Home() {
             </div>
           </div>
           <div className='vertical' style={{width: '40%'}}>
-            <section className='main' style={{height: '33%'}} onClick={()=> window.open("https://github.com/alevanpraag", "_blank")}>
-              <h2>TECH</h2>
+            <section className='main' style={{height: '33%'}}>
+              <Link className='main' to="https://github.com/alevanpraag">
+                <h2>TECH</h2>
+              </Link>
             </section>
-            <div className='art clickable' style={{ height:'67%', backgroundColor:'#001219'}} onClick={()=> window.open("https://youtube-rewind-410800.uc.r.appspot.com/", "_blank")}>
+            <Link style={{ height:'67%'}} to="https://youtube-rewind-410800.uc.r.appspot.com/">
+            <div className='art clickable' style={{ height:'100%', backgroundColor:'#001219'}}>
               <img src={rewind} alt="Girl in a jacket" width="90%" style={{top:'47.5%'}}></img>
             </div>
+            </Link>
           </div>
         </div>
       </div>
